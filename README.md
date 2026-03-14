@@ -40,5 +40,3 @@ Als du durch die Tür gehst, befindest du in einem Klassenraum. Der Mathelehrer 
 - Zufall-Generierung von Mathe-Aufgaben inkl. 3 Schwierigkeitsstufen
 - Health Bar System
 - Spickzettel
-
-

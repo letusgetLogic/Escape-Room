@@ -6,6 +6,7 @@ Der Spieler befindet sich in einem Raum mit verschlossenen Tür. Er muss das Sch
 
 ## Projekt
 Dieses Projekt wurde für das Modul **4FSC0PD001** am **SAE Institute Hannover** erstellt.
+Entwicklungs-Zeitraum: 07.10.2025 - 18.10.2025
 
 Die Aufgaben waren
 - Festlegen der Raumgröße durch die Eingabe,
@@ -27,7 +28,23 @@ Die Aufgaben waren
 - Medium: Zufall-Bewegung vom Schlüssel
 - Hard: Extra-Minispiel beim Ausgang
 
+
+
 # Minispiel
+
+# # # # # # # # # # # # # #
+#                         #
+#       Mathe Lehrer      #
+#            M            #
+#           ===           #
+#                         #
+#    ===    ===    ===    #
+#     o      F      o     #
+#                         #
+#    ===    ===    ===    #
+#     o      o      o     #
+#         Schüler         #
+# # # # # # # # # # # # # #
 
 ## Story
 Als du durch die Tür gehst, befindest du in einem Klassenraum. Der Mathelehrer Herr Müller erscheint und stellt ein Überraschungs-Test. Erst nachdem du die Aufgaben richtig beantwortet hast, kannst du nach draußen gelangen.
@@ -36,4 +53,5 @@ Als du durch die Tür gehst, befindest du in einem Klassenraum. Der Mathelehrer 
 - Zufall-Generierung von Mathe-Aufgaben inkl. 3 Schwierigkeitsstufen
 - Health Bar System
 - Spickzettel
+
 

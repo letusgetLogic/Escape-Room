@@ -53,4 +53,9 @@ Die Codes in diesem Projekt wurden nach dem Entwicklungszeitraum kaum verändert
 
 ## Spiel
 Um das Spiel auszuführen, müssen folgende Schritte gemacht werden:
-1. Download den Ordner "Escape Room Build.zip"
+1. Downloade den Ordner "Escape Room Build.zip"
+2. Extrahiere den Ordner
+3. Wähle .exe-Datei aus
+4. Hab Spaß :)
+
+------------------------------------------------------------------------

@@ -1,2 +1,5 @@
-# Escape-Room
-A console-based game, in which you control the character from the escape room.
+# Escape Room
+Ein Konsolenspiel mit ASCII-Zeichen und Programmiersprache C#.
+
+## Aufgabe
+Studiumprojekt

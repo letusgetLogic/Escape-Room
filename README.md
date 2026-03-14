@@ -1,5 +1,6 @@
 # Escape Room
 Ein Konsolenspiel mit **ASCII-Zeichen** und der Programmiersprache **C#**.
+------------------------------------------------------------------------
 
 ## Beschreibung
 Der Spieler befindet sich in einem Raum mit verschlossenen Tür. Er muss das Schlüssel einsammeln, um die Tür zu öffen und nach draußen zu gelangen.

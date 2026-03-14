@@ -10,7 +10,7 @@ Der Spieler befindet sich in einem Raum mit verschlossenen Tür. Er muss das Sch
 ## Projekt
 Dieses Projekt wurde für das Modul **4FSC0PD001** am **SAE Institute Hannover** erstellt.
 
-Entwicklungs-Zeitraum: 07.10.2025 - 18.10.2025
+Entwicklungs-Zeitraum: **07.10.2025 - 18.10.2025**
 
 Die Aufgaben waren
 - Festlegen der Raumgröße durch die Eingabe,

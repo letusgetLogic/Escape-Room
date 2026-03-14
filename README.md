@@ -45,3 +45,8 @@ Als du durch die Tür gehst, befindest du in einem Klassenraum. Der Mathelehrer 
 - Spickzettel
 
 ------------------------------------------------------------------------
+
+# Bemerkung
+Die Codes in diesem Projekt wurden nach dem Entwicklungszeitraum kaum verändert und dienen als den Entwicklungsstand zu der Zeit.
+
+------------------------------------------------------------------------

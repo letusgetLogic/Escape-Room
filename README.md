@@ -5,7 +5,8 @@ Ein Konsolenspiel mit **ASCII-Zeichen** und der Programmiersprache **C#**.
 Der Spieler befindet sich in einem Raum mit verschlossenen Tür. Er muss das Schlüssel einsammeln, um die Tür zu öffen und nach draußen zu gelangen.
 
 ## Projekt
-Dieses Projekt wurde für das Modul **4FSC0PD001** am **SAE Institute Hannover** erstellt.\
+Dieses Projekt wurde für das Modul **4FSC0PD001** am **SAE Institute Hannover** erstellt.
+
 Entwicklungs-Zeitraum: 07.10.2025 - 18.10.2025
 
 Die Aufgaben waren

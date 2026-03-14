@@ -31,7 +31,7 @@ class Level
             SetRoomSize();
             Room.CalculateDistance();
             Room.SetArray();
-            Room.FieldsChar();
+            Room.SetCharsInArray();
             Room.Print();
             AskConfirm();
             Console.Clear();
@@ -45,24 +45,24 @@ class Level
 
         Highscores.CalculateShortWay();
 
-        Room.FieldsChar();
+        Room.SetCharsInArray();
         Room.Print();
 
         while (GameOver != true)
         {
-            Room.FieldsChar();
+            Room.SetCharsInArray();
 
             Check.PrintRoomAndTipp();
             
-            Figure.IsPrinted();
+            Figure.Print();
 
-            if (Check.ItemIsCollected == false) Item.IsPrinted();
+            if (Check.ItemIsCollected == false) Item.Print();
 
             Console.SetCursorPosition(0, 0);
 
             Movement.PressKey();
 
-            Room.FieldsChar(); // damit den Char 'F' gesetzt wird und die Bewegung vom Item nur auf dem Char '.' zugewiesem werden kann.
+            Room.SetCharsInArray(); // damit den Char 'F' gesetzt wird und die Bewegung vom Item nur auf dem Char '.' zugewiesem werden kann.
             Check.ItemCollect();
 
             if (Easy == false && Check.ItemIsCollected == false) Item.Move();
@@ -134,8 +134,9 @@ class Level
             Console.WriteLine();
             return;
         }
-        Console.WriteLine($"{"",-20}Das sind keine gültige Zahlen.");
-        Console.WriteLine("Drück Enter!");
+        Console.WriteLine();
+        Console.WriteLine($"{"",-20}Das sind keine gültige Zahlen.\n");
+        Console.WriteLine($"{"",-20}Drück beliebige Taste!");
         Console.ReadKey();
         Console.Clear();
         SetRoomSize();

@@ -6,6 +6,8 @@ class Check
     public static bool QuizIsCollected;
     public static int DegreeOfDepair; // Grad der Verzweiflung wenn Spieler 10 mal in der Nähe vom Item ist, aber nicht bekommt.
 
+    private static bool canClearTipp = false; // Lösch Tipp, wenn Item gesammelt wurde.
+
     /// <summary>
     /// Wenn die Figur auf das Item ist, beept und Item gesammelt.
     /// </summary>
@@ -52,12 +54,22 @@ class Check
     /// </summary>
     public static void PrintRoomAndTipp()
     {
-        if (DegreeOfDepair == 10)
+        if (ItemIsCollected == false && DegreeOfDepair == 10)
         {
             Console.SetCursorPosition(0, 0);
             Room.Print();
             Console.WriteLine();
             Console.WriteLine($"{"",-20} Tipp: Lauf einmal gegen dem Wand!");
+
+            canClearTipp = true;
+        }
+        if (ItemIsCollected && canClearTipp)
+        {
+            Console.Clear();
+            Console.SetCursorPosition(0, 0);
+            Room.Print();
+
+            canClearTipp = false;
         }
     }
 

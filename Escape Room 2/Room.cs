@@ -20,7 +20,7 @@ class Room
     /// <summary>
     /// Gibt jedem Feld ein Zeichen.
     /// </summary>
-    public static void FieldsChar()
+    public static void SetCharsInArray()
     {
         for (i = 0; i < Row; i++)
         {
@@ -28,14 +28,14 @@ class Room
             {
                 if (i == 0 || i == Row - 1 || j == 0 || j == Column - 1)
                 {
-                    CharsOnSidesCorners(i, j);
+                    SetCharOnSides(i, j);
                 }
                 else
                 {
                     Pos[i, j] = '.'; // Leere Fläche im Inneren.
                 }
 
-                CharsOnFigureItem(i, j);
+                SetFigureAndItem(i, j);
             }
         }
     }
@@ -45,7 +45,7 @@ class Room
     /// </summary>
     /// <param name="i"></param>
     /// <param name="j"></param>
-    private static void CharsOnSidesCorners(int i, int j)
+    private static void SetCharOnSides(int i, int j)
     {
         if (i == Door.i && j == Door.j && Level.SetSize == true)
         {
@@ -71,7 +71,7 @@ class Room
     /// </summary>
     /// <param name="i"></param>
     /// <param name="j"></param>
-    private static void CharsOnFigureItem(int i, int j)
+    private static void SetFigureAndItem(int i, int j)
     {
         if (Level.SetSize == true && i == Figure.i && j == Figure.j)
         {

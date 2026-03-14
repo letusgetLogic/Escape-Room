@@ -81,7 +81,7 @@ class Item
     /// <summary>
     /// Setzt das Item auf Position.
     /// </summary>
-    public static void IsPrinted()
+    public static void Print()
     {
         // Vorherige Position mit '.' überschreiben.
         Program.Display(Room.Distance + (_j * 2), _i, ".");

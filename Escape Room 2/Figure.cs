@@ -30,7 +30,7 @@ class Figure
     /// <summary>
     /// Setzt den Spielfigur auf Position.
     /// </summary>
-    public static void IsPrinted()
+    public static void Print()
     {
         // Setzt die vorherige Position mit ".".
         Program.Display(Room.Distance + (_j * 2), _i, ".");

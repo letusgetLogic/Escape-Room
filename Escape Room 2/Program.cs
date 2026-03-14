@@ -33,13 +33,14 @@ class Program
     /// </summary>
     private static void PleaseEnterYourNameHere()
     {
-        Display(46, 1, "# # # # # # # # # # # # # #");
-        Display(46, 2, "# . . . . . . . . . . . . #");
-        Display(46, 3, "# . . . Escape Room . . . #");
-        Display(46, 4, "# . . . . . . . . . . . . #");
-        Display(46, 5, "# # # # # # # # # # # # # #");
-        Display(46, 8, "Deine Name: (Für Highscores)");
-        Display(46, 10, "");
+        int col = Console.BufferWidth / 2 - 14;
+        Display(col, 1, "# # # # # # # # # # # # # #");
+        Display(col, 2, "# . . . . . . . . . . . . #");
+        Display(col, 3, "# . . . Escape Room . . . #");
+        Display(col, 4, "# . . . . . . . . . . . . #");
+        Display(col, 5, "# # # # # # # # # # # # # #");
+        Display(col, 8, "Deine Name: (Für Highscores)");
+        Display(col, 10, "");
 
         Highscores.PlayerName = Console.ReadLine();
 
@@ -53,7 +54,8 @@ class Program
         if (charCount > 13)
         {
             Console.ForegroundColor = ConsoleColor.Red;
-            Display(46, 12, "Deine Name darf höchstens 13 Zeichen haben. Drück Enter!");
+            Display(col, 12, "Deine Name darf höchstens 13 Zeichen haben.");
+            Display(col, 14, "Drück beliebige Taste!");
             Console.ForegroundColor = ConsoleColor.White;
             Console.ReadKey();
             Console.Clear();
@@ -67,27 +69,33 @@ class Program
     /// </summary>
     private static void PrintMenu()
     {
-        Display(46, 1, "# # # # # # # # # # # # # #");
-        Display(46, 2, "# . . . . . . . . . . . . #");
-        Display(46, 3, "# . . . Escape Room . . . #");
-        Display(46, 4, "# . . . . . . . . . . . . #");
-        Display(46, 5, "# # # # # # # # # # # # # #");
-        Display(10, 8, "Du befindest dich in einem 'Escape Room' und musst verschiedene Rätseln lösen um herauszukommen!");
-        Display(10, 10, "Im ersten Level musst du dir das Item sammeln, um die verschlossene Tür zu öffnen.");
+        int col = Console.BufferWidth / 2 - 14;
+        Display(col, 1, "# # # # # # # # # # # # # #");
+        Display(col, 2, "# . . . . . . . . . . . . #");
+        Display(col, 3, "# . . . Escape Room . . . #");
+        Display(col, 4, "# . . . . . . . . . . . . #");
+        Display(col, 5, "# # # # # # # # # # # # # #");
 
-        Display(10, 12, "Spielelemente auf der Karte: ");
+        col = Console.BufferWidth / 2 - 45;
+        Display(col, 8, "Du befindest dich in einem 'Escape Room' und musst verschiedene Rätseln lösen um herauszukommen!");
+        Display(col, 10, "Im ersten Level musst du dir das Item sammeln, um die verschlossene Tür zu öffnen.");
+
+        col = Console.BufferWidth / 2 - 14;
+        Display(col, 12, "Spielelemente auf der Karte: ");
         Console.ForegroundColor = ConsoleColor.Blue;
-        Display(40, 13, "F = Spielfigur");
+        Display(col, 13, "F = Spielfigur");
         Console.ForegroundColor = ConsoleColor.Green;
-        Display(40, 14, "I = Item");
+        Display(col, 14, "I = Item");
         Console.ForegroundColor = ConsoleColor.Red;
-        Display(40, 15, "T = Tür ");
+        Display(col, 15, "T = Tür ");
         Console.ResetColor();
-        Display(40, 16, "# = Wand");
+        Display(col, 16, "# = Wand");
         
-        Display(10, 18, "- Bewegung der Spielfigur mit WASD oder Pfeiltasten -");
+        col = Console.BufferWidth / 2 - 28;
+        Display(col, 18, "- Bewegung der Spielfigur mit WASD oder Pfeiltasten -");
 
-        Display(46, 22, "> Drück ENTER zu starten <");
+        col = Console.BufferWidth / 2 - 18;
+        Display(col, 22, "> Drück beliebige Taste zu starten <");
         Console.ReadKey();
         Console.Clear();
     }
@@ -123,7 +131,7 @@ class Program
             Display(col, row += 2, $"Score: {Highscores.Score}");
         }
 
-        Display(Console.BufferWidth / 2 - 7, Console.BufferHeight - 1, "> Drück Enter <");
+        Display(Console.BufferWidth / 2 - 13, Console.BufferHeight - 1, "> Drück beliebige Taste <");
         Console.ReadKey();
         Console.Clear();
     }
@@ -147,7 +155,7 @@ class Program
             Display(col + 3, row + i, Highscores.HighscoresSheetName[i - 1]);
             Display(col + 17, row + i, Highscores.HighscoresSheet[i - 1].ToString());
         }
-        Display(Console.BufferWidth / 2 - 7, Console.BufferHeight - 1, "> Drück Enter <");
+        Display(Console.BufferWidth / 2 - 13, Console.BufferHeight - 1, "> Drück beliebige Taste <");
         Console.ReadKey();
         Console.Clear();
     }
@@ -159,9 +167,9 @@ class Program
     {
         Console.Beep();
 
-        int col = 20;
         int row = Console.BufferHeight / 2 - 14;
         Display(Console.BufferWidth / 2 - 20, row += 2, "- Zusätzliche eingebaute Funktionen -");
+        int col = Console.BufferWidth / 2 - 40;
         Display(col, row += 2, "");
         Display(col, row += 2, "-> Einführung der 3 Level-Modi");
         Display(col, row += 2, "-> Vorschau des Escape Rooms vor der Bestätigung");
@@ -172,7 +180,7 @@ class Program
         Display(col, row += 2, "-> Counter für gebrauchte Züge, gelöste Aufgaben und etc.");
         Display(col, row += 2, "-> Highscores + Spiel-Loop");
 
-        Display(Console.BufferWidth / 2 - 7, Console.BufferHeight - 1, "> Drück Enter <");
+        Display(Console.BufferWidth / 2 - 13, Console.BufferHeight - 1, "> Drück beliebige Taste <");
         Console.ReadKey();
         Console.Clear();
     }

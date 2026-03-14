@@ -34,19 +34,23 @@ Die Aufgaben waren
 
 ------------------------------------------------------------------------
 
-# Minispiel
+## Minispiel
 
-## Story
+### Story
 Als du durch die Tür gehst, befindest du in einem Klassenraum. Der Mathelehrer Herr Müller erscheint und stellt ein Überraschungs-Test. Erst nachdem du die Aufgaben richtig beantwortet hast, kannst du nach draußen gelangen.
 
-## Features
+### Features
 - Zufall-Generierung von Mathe-Aufgaben inkl. 3 Schwierigkeitsstufen
 - Health Bar System
 - Spickzettel
 
 ------------------------------------------------------------------------
 
-# Bemerkung
+## Bemerkung
 Die Codes in diesem Projekt wurden nach dem Entwicklungszeitraum kaum verändert und dienen als Zeigen des Entwicklungsstands zu der Zeit.
 
 ------------------------------------------------------------------------
+
+## Spiel
+Um das Spiel auszuführen, müssen folgende Schritte gemacht werden:
+1. Download den Ordner "Escape Room Build.zip"

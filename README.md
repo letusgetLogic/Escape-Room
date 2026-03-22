@@ -47,7 +47,7 @@ Als du durch die Tür gehst, befindest du in einem Klassenraum. Der Mathelehrer 
 ------------------------------------------------------------------------
 
 ## Bemerkung
-Die Codes in diesem Projekt wurden nach dem Entwicklungszeitraum kaum verändert und dienen als Zeigen des Entwicklungsstands zu der Zeit.
+Die Codes in diesem Projekt wurden nach dem Entwicklungszeitraum kaum verändert und dienen als Representation des Entwicklungsstands zu der Zeit.
 
 ------------------------------------------------------------------------
 
@@ -56,6 +56,6 @@ Um das Spiel auszuführen, müssen folgende Schritte gemacht werden:
 1. Downloade den Ordner "Escape Room Build.zip"
 2. Extrahiere den Ordner
 3. Wähle .exe-Datei aus
-4. Hab Spaß :)
+4. Hab Spaß ;)
 
 ------------------------------------------------------------------------

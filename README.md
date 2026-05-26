@@ -37,7 +37,7 @@ Die Aufgaben waren
 ## Minispiel
 
 ### Story
-Als du durch die Tür gehst, befindest du in einem Klassenraum. Der Mathelehrer Herr Müller erscheint und stellt ein Überraschungs-Test. Erst nachdem du die Aufgaben richtig beantwortet hast, kannst du nach draußen gelangen.
+Als du durch die Tür gehst, befindest du in einem Klassenraum. Der Mathelehrer Herr Müller erscheint und stellt ein Überraschungs-Test. Erst nachdem du die Aufgaben richtig beantwortet hast, kannst du nach draußen gelangen...
 
 ### Features
 - Zufall-Generierung von Mathe-Aufgaben inkl. 3 Schwierigkeitsstufen

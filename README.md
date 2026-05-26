@@ -47,7 +47,7 @@ Als du durch die Tür gehst, befindest du in einem Klassenraum. Der Mathelehrer 
 ------------------------------------------------------------------------
 
 ## Bemerkung
-Die Codes in diesem Projekt wurden nach dem Entwicklungszeitraum kaum verändert und dienen als Representation des Entwicklungsstands zu der Zeit.
+Die Codes in diesem Projekt wurden nach dem Entwicklungszeitraum kaum verändert und dienen als Representation des Entwicklungs-Niveau zu der Zeit.
 
 ------------------------------------------------------------------------
 
